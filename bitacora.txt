@@ -1,7 +1,7 @@
 URL:http://127.0.0.1:3000/index.html?vscode-livepreview=true
 Protocolo: http
-Host:
-Puerto:
-Ruta: 
-Metodo de peticion:
-Codigo de estado:
+Host:127.0.0.1
+Puerto:3000
+Ruta: index.html
+Metodo de peticion: get
+Codigo de estado: 200 ok

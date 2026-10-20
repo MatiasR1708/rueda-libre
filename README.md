@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-Actualizaciones sobre el proyecto estaran aca 
-=======
-Las actualizaciones del proyecto estaran aca 
->>>>>>> main
+Las actualizaciones del proyecto estan aca
