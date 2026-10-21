@@ -1,1 +1,1 @@
-Las actualizaciones del proyecto estaran aca 
+Las actualizaciones del proyecto estan aca
