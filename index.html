@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/Logotipo de rueda-libre.png">
+    <link rel="stylesheet" href="">
     
     <title>Rueda libre</title>
     <nav>
@@ -57,8 +58,8 @@
     <a href="https://www.google.com/maps/place/Terminal+del+Sur,+Guayabal,+Medell%C3%ADn,+Guayabal,+Medell%C3%ADn,+Antioquia/@6.2165971,-75.5912351,17z/data=!3m1!4b1!4m6!3m5!1s0x8e4429dae731fa69:0x355d5443f303ca95!8m2!3d6.2165971!4d-75.5886602!16s%2Fg%2F11bylbnt47?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">SEDE TERMINAL DEL SUR</a>
     <a href="mailto:matiasriosospina@gmail.com">Correo para contactarnos</a>
     <section id="Forms">
-        <form action="/almacenamiento-forms.txt" method="post">
-            <fieldset>
+        <form action="" method="post">
+            <fieldset class="Tus-datos">
                 <legend>Tus datos</legend>
                 <p>
                     <label for="nombre">Nombre completo</label>
@@ -67,27 +68,27 @@
                 </p>
                 <p>
                     <label for="numero_de_documento">Numero de documento</label>
-                    <input type="text" required pattern="[0,9]{6,10}" title="Ingrese entre 6 y 10 digitos numericos">
+                    <input type="text" required pattern="[0-9]{6,10}" title="Ingrese entre 6 y 10 digitos numericos">
                 </p>
                 <p>
                     <label for="email">Correo electronico</label>
-                    <input type="email">
+                    <input type="email" required>
                 </p>
                 <p>
                     <label for="celular">Celular</label>
-                    <input type="tel">
+                    <input type="text" required pattern="3[0-9]{9}" title="El numero debe iniciar por 3 y tener 10 digitos">
                 </p>
             </fieldset>
-            <fieldset>
+            <fieldset class="Tu-alquiler">
                 <legend>Tu alquiler</legend>
                 <p>
                     <label for="fecha_alquiler">Fecha del alquiler</label>
-                    <input type="date">
+                    <input type="date" required min="2026-1101" max="2026-12-31" >
                 </p>
                 
                 <p>
                     <label for="Tipo_bicicleta_select">Seleccione el tipo de bicicleta</label>
-                    <select name="Tipo_bicicleta" id="Tipo_bicicleta_select">
+                    <select name="Tipo_bicicleta_select" id="Tipo_bicicleta_select" required>
                         <option value="">Seleccione una opcion</option>
                         <option value="montaña">Montaña</option>
                         <option value="urbana">Urbana</option>
@@ -105,7 +106,7 @@
                 </p>
                 <p>
                     <label for="cantidad_bicicletas">Digite la cantidad de bicicletas que necesita</label>
-                    <input type="number" id="">
+                    <input type="number" id="" min="1" max="6">
                 </p>
                 <p>
                     <label for="recorrido_guiado">Seleccione el recorrido</label>
@@ -117,8 +118,12 @@
                         <option value="ruta_lechera">Ruta lechera</option>
                     </select>
                 </p>
+                <p>
+                    <label for="comentarios">Comentarios</label>
+                    <input type="textarea" name="" id="">
+                </p>
             </fieldset>
-            <fieldset>
+            <fieldset class="Confirmacion">
                 <legend>Confirmacion</legend>
                 <p>
                     <label for="comentario">Si tiene algun comentario, por favor dejenos saberlo</label>
@@ -129,6 +134,11 @@
                     <label for="aceptacion">Si</label>
                     <input type="radio" name="" id="">
                 </p>
+                <p>
+                    <label for="politicas">Aceptar las politicas de alquiler</label>
+                    <input type="radio" name="" id="" title="Es obligatorio aceptar las politicas">
+                </p>
+                <button type="submit">Enviar</button>
             </fieldset>
         </form>
     </section>
