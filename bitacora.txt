@@ -100,3 +100,67 @@ Campo: Tipo de bicicleta.
 Dato de prueba: No seleccionar ninguna opción.
 Resultado esperado: El formulario debe exigir que se seleccione un tipo de bicicleta.
 Resultado obtenido: El navegador solicita seleccionar una opción antes de enviar.
+
+1.
+- Combinación:
+   Blanco sobre Verde Ruta 
+- Contraste
+   5.31:1
+- Clasificación
+   Apta para texto normal 
+
+2.
+- Combinación:
+   Blanco sobre Naranja Pedal 
+- Contraste
+   2.22:1 
+- Clasificación:
+   No apta 
+
+3.
+- Combinación:
+   Azul Noche sobre Naranja Pedal 
+- Contraste:
+   7.20:1
+- Clasificación: 
+   Apta para texto normal
+
+4.
+- Combinación:
+   Azul Noche sobre Crema
+- Contraste: 
+   14.83:1 
+- Clasificación:
+   Apta para texto normal
+
+5.
+- Combinación:
+   Gris Asfalto sobre Crema
+- Contraste:
+   5.57:1
+- Clasificación:
+   Apta para texto normal
+
+6.
+-Combinación:
+   Verde Ruta sobre Crema
+- Contraste:
+   4.93:1
+- Clasificación:
+   Apta para texto normal
+
+7.
+- Combinación:
+   Naranja Pedal sobre Crema
+- Contraste:
+   2.06:1
+- Clasificación
+   No apta
+
+8.
+- Combinación:
+   Blanco sobre Azul Noche 
+- Contraste:
+   15.97:1 
+- Clasificación:
+   Apta para texto normal
