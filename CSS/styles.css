@@ -22,6 +22,68 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--fuente-titulos);
-    font-weight: 900;
     color: var(--verde-ruta);
+}
+
+/*#menu a { color: var(--gris-asfalto); }*/
+
+.activo { color: var(--verde-ruta); font-weight: 600; }
+
+.reserva-ahora{
+    text-decoration: none;
+    background-color: #1E7A4F;
+    border-radius: 5px;
+    padding: var(--espacio-pequeno);
+    color: #FAF6EF;
+}
+
+.activo:hover {
+    background-color: #5B6470;
+    color: var(--crema);
+}
+
+*:focus{
+    border-radius: 5px;
+    outline: solid red;
+}
+header {
+    background-color: var(--azul-noche);
+    font-family: var(--fuente-titulos);
+    display: flex;
+}
+nav ul{
+    display: flex;
+    gap: var(--espacio-grande);
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+}
+nav ul li a {
+    display: block;
+    padding: var(--espacio-medio) var(--espacio-grande);
+    color: var(--crema);
+    text-decoration: none;
+}
+
+#alquiler, #recorridos {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: var(--espacio-medio);
+    padding: var(--espacio-medio);
+}
+#servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main{
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
+
+}
+footer {
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
 }

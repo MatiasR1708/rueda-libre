@@ -9,145 +9,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <title>Rueda libre</title>
-    <nav>
-        <ul>
-            
-            <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
-            <li><a href="./paginas/reservas.html">Reservas</a></li>
-        </ul>
-    </nav>
-</head>
-<body>
-    <h1>Rueda - Libre | Alquiler de bicicletas en Medellin</h1>
-    <p>Bienvenid@ a la mejor pagina de arrendamiento de biciletas en Medellin, te invitamos a saber un poco mas sobre nosotros en <a href="#Encuentranos">nuestra sede o correo electronico</a> y tomar la mejor desicion de adquirir nuestros servicios</p>
     
-    <img src="img/Logotipo de rueda-libre.png" alt="Portada de empresa ruta" width=300px> 
-    <section>
-        <h2>¿Quienes somos?</h2>
+</head>
 
-        <p>Somos una empresa fundada desde el 2001 consolidandonos como la empresa mas robusta del mercado, siendo la top 1 año tras año</p>
-    </section>
-    <section>
-        <h2>Nuestros servicios</h2>
-        
-            <h3>Alquiler de biciletas</h3>
-            <p>Tenemos variedad de bicicletas de todo tipo dependiendo tu necesidad<a href="./paginas/tarifas.html#Tabla-precios">Tabla de precios</a></p>
-            <h3>Recorridos guiados</h3>
-            <p>Escoge tu recorrido de preferencia y te <strong>incluimos casco y candado</strong><a href="./paginas/tarifas.html#Tabla-recorridos">Tabla de recorridos</a></p>
-            <img src="img/imagen-ruta-cicla.jpeg" alt="Imagen de un recorrido que ofrecemos"width = 300px> 
-            <h3>Taller basico</h3>
-            <p>Tenemos un examen practico para validar que vas hacer un uso adecuado de los recursos</p>
-    </section>
-    <section>
-        <h2>¿Como alquilar?</h2>
-        <ol>
-            <li>Presentar documento de identidad</li>
-            <li>Dejar un colchon del valor del <em>20%</em> del servicio que vas alquilar</li>
-            <li>Firmar consentimiento de que el recurso sera entregado en las mismas condiciones que se llevo</li>
-        </ol>
-            <article>
-                <h3>Beneficios del servicio</h3>
-                <ul>
-                    <li>Seguro todo riesgo en caso de accidentes</li>
-                    <li>Servicios del mas alto nivel</li>
-                    <li>Vivir una experiencia unica con nosotros</li>
-                </ul>
-                <img src="img/Imagen_bicicleta.jpeg" alt="Imagen de una de las bicicletas que ofrecemos" width= 300px>
-            </article>
-    </section>
-    <h2 id="Encuentranos">Encuentranos</h2>
-    <p>Nos puedes encontrar en esta ubicacion que compartimos a continuacion</p>
-    <a href="https://www.google.com/maps/place/Terminal+del+Sur,+Guayabal,+Medell%C3%ADn,+Guayabal,+Medell%C3%ADn,+Antioquia/@6.2165971,-75.5912351,17z/data=!3m1!4b1!4m6!3m5!1s0x8e4429dae731fa69:0x355d5443f303ca95!8m2!3d6.2165971!4d-75.5886602!16s%2Fg%2F11bylbnt47?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">SEDE TERMINAL DEL SUR</a>
-    <a href="mailto:matiasriosospina@gmail.com">Correo para contactarnos</a>
-    <section id="Forms">
-        <form action="" method="post">
-            <fieldset class="Tus-datos">
-                <legend>Tus datos</legend>
-                <p>
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" name="name" id="nombre" required minlength="3">
-                
-                </p>
-                <p>
-                    <label for="numero_de_documento">Numero de documento</label>
-                    <input type="text" required pattern="[0-9]{6,10}" title="Ingrese entre 6 y 10 digitos numericos">
-                </p>
-                <p>
-                    <label for="email">Correo electronico</label>
-                    <input type="email" required>
-                </p>
-                <p>
-                    <label for="celular">Celular</label>
-                    <input type="text" required pattern="3[0-9]{9}" title="El numero debe iniciar por 3 y tener 10 digitos">
-                </p>
-            </fieldset>
-            <fieldset class="Tu-alquiler">
-                <legend>Tu alquiler</legend>
-                <p>
-                    <label for="fecha_alquiler">Fecha del alquiler</label>
-                    <input type="date" required min="2026-1101" max="2026-12-31" >
-                </p>
-                
-                <p>
-                    <label for="Tipo_bicicleta_select">Seleccione el tipo de bicicleta</label>
-                    <select name="Tipo_bicicleta_select" id="Tipo_bicicleta_select" required>
-                        <option value="">Seleccione una opcion</option>
-                        <option value="montaña">Montaña</option>
-                        <option value="urbana">Urbana</option>
-                        <option value="electrica">Electrica</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="tiempo">Seleccione el tiempo de uso</label>
-                    <select name="tiempo" id="tiempo_select">
-                        <option value="">Seleccione una opcion</option>
-                        <option value="1hora">1 hora</option>
-                        <option value="medio_dia">Medio dia</option>
-                        <option value="dia_completo">Dia completo</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="cantidad_bicicletas">Digite la cantidad de bicicletas que necesita</label>
-                    <input type="number" id="" min="1" max="6">
-                </p>
-                <p>
-                    <label for="recorrido_guiado">Seleccione el recorrido</label>
-                    <select name="recorrido_guiado" id="recorrido_guiado">
-                        <option value="">Seleccione una opcion</option>
-                        <option value="ninguno">Ninguno</option>
-                        <option value="cerro">Cerro de las 3 cruces</option>
-                        <option value="estadio">Vuelta estadio</option>
-                        <option value="ruta_lechera">Ruta lechera</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="comentarios">Comentarios</label>
-                    <input type="textarea" name="" id="">
-                </p>
-            </fieldset>
-            <fieldset class="Confirmacion">
-                <legend>Confirmacion</legend>
-                <p>
-                    <label for="comentario">Si tiene algun comentario, por favor dejenos saberlo</label>
-                    <input type="textarea" name="" id="">
-                </p>
-                <p>Necesitamos que acepte nuestras politicas de alquiler</p>
-                <p>
-                    <label for="aceptacion">Si</label>
-                    <input type="radio" name="" id="">
-                </p>
-                <p>
-                    <label for="politicas">Aceptar las politicas de alquiler</label>
-                    <input type="radio" name="" id="" title="Es obligatorio aceptar las politicas">
-                </p>
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
-    </section>
-</body>
-<footer>
+<body>
+    <main>
+        <header class="">
+            <nav>
+            <ul id="menu">
+                <li><a href="#" class="activo">Inicio</a></li>
+                <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
+                <li><a href="paginas/reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+        </header>
+        <h1>Rueda - Libre | Alquiler de bicicletas en Medellin</h1>
+        <p>Bienvenid@ a la mejor pagina de arrendamiento de biciletas en Medellin, te invitamos a saber un poco mas sobre nosotros en <a href="#Encuentranos">nuestra sede o correo electronico</a> y tomar la mejor desicion de adquirir nuestros servicios</p>
+
+        <img src="img/Logotipo de rueda-libre.png" alt="Portada de empresa ruta" width=300px> 
+        <section>
+            <h2>¿Quienes somos?</h2>
+
+            <p>Somos una empresa fundada desde el 2001 consolidandonos como la empresa mas robusta del mercado, siendo la top 1 año tras año</p>
+        </section>
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+                <article id="alquiler">
+                    <h3>Alquiler de biciletas</h3>
+                    <p>Tenemos variedad de bicicletas de todo tipo dependiendo tu necesidad<a href="./paginas/tarifas.html#Tabla-precios">Tabla de precios</a></p>
+                    <img src="img/Imagen_bicicleta.jpeg" alt="Imagen de una de las bicicletas que ofrecemos" width= 300px>
+                </article>
+                <article id="recorridos">
+                    <h3>Recorridos guiados</h3>
+                    <p>Escoge tu recorrido de preferencia y te <strong>incluimos casco y candado</strong><a href="./paginas/tarifas.html#Tabla-recorridos">Tabla de recorridos</a></p>
+                    <img src="img/imagen-ruta-cicla.jpeg" alt="Imagen de un recorrido que ofrecemos"width = 300px> 
+                </article>
+                <h3>Taller basico</h3>
+                <p>Tenemos un examen practico para validar que vas hacer un uso adecuado de los recursos</p>
+        </section>
+        <section>
+            <h2>¿Como alquilar?</h2>
+            <ol>
+                <li>Presentar documento de identidad</li>
+                <li>Dejar un colchon del valor del <em>20%</em> del servicio que vas alquilar</li>
+                <li>Firmar consentimiento de que el recurso sera entregado en las mismas condiciones que se llevo</li>
+
+            </ol>
+                <article>
+                    <h3>Beneficios del servicio</h3>
+                    <ul>
+                        <li>Seguro todo riesgo en caso de accidentes</li>
+                        <li>Servicios del mas alto nivel</li>
+                        <li>Vivir una experiencia unica con nosotros</li>
+                    </ul>
+
+                </article>
+                <a href="paginas/reservas.html" class="reserva-ahora">Reserva ahora </a>
+        </section>
+        <h2 id="Encuentranos">Encuentranos</h2>
+        <p>Nos puedes encontrar en esta ubicacion que compartimos a continuacion</p>
+        <a href="https://www.google.com/maps/place/Terminal+del+Sur,+Guayabal,+Medell%C3%ADn,+Guayabal,+Medell%C3%ADn,+Antioquia/@6.2165971,-75.5912351,17z/data=!3m1!4b1!4m6!3m5!1s0x8e4429dae731fa69:0x355d5443f303ca95!8m2!3d6.2165971!4d-75.5886602!16s%2Fg%2F11bylbnt47?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">SEDE TERMINAL DEL SUR</a>
+        <a href="mailto:matiasriosospina@gmail.com">Correo para contactarnos</a>
+    </main>
+    <footer>
     <p>Rueda-Libre</p>
     <a href="malito:matiasriosospina1@gmail.com">Correo de contacto</a>
+    
     <p>2026</p>
-</footer>
+    </footer>
+</body>
 </html>
