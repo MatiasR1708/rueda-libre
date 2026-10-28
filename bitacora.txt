@@ -1,7 +1,166 @@
 URL:http://127.0.0.1:3000/index.html?vscode-livepreview=true
 Protocolo: http
-Host:
-Puerto:
-Ruta: 
-Metodo de peticion:
-Codigo de estado:
+Host:127.0.0.1
+Puerto:3000
+Ruta: index.html
+Metodo de peticion: get
+Codigo de estado: 200 ok
+
++-------------------------------------------------------+
+
+| header                                                |
+|   +-------------------------------------------------+ |
+|   | nav                                             | |
+|   +-------------------------------------------------+ |
++-------------------------------------------------------+
+
+| main                                                  |
+|                                                       |
+|   +-------------------------------------------------+ |
+|   | section                                         | |
+|   +-------------------------------------------------+ |
+|                                                       |
+|   +-------------------------------------------------+ |
+|   | section                                         | |
+|   |                                                 | |
+|   |   +-------------------------------------------+ | |
+|   |   | article                                   | | |
+|   |   +-------------------------------------------+ | |
+|   |                                                 | |
+|   |   +-------------------------------------------+ | |
+|   |   | article                                   | | |
+|   |   +-------------------------------------------+ | |
+|   +-------------------------------------------------+ |
++-------------------------------------------------------+
+
+| footer                                                |
++-------------------------------------------------------+
+Para el formulario preferi:
+1. Escoger la etiqueta radio para hacer que la persona tenga que marcar la unica opcion posible que es "Si"
+2. Use select y option para desplegar una lista de opciones y que solo puedan escoger una
+3. El legend lo tome como el titulo para cada fragmento de formularios
+
+
+PRUEBA 1
+Campo: Nombre completo.
+Dato de prueba: Dejar el campo vacío.
+Resultado esperado: El formulario no debe permitir el envío porque el campo es obligatorio.
+Resultado obtenido: El navegador impide enviar el formulario y solicita completar el campo.
+
+PRUEBA 2
+Campo: Nombre completo.
+Dato de prueba: Jo.
+Resultado esperado: El formulario debe rechazar el nombre porque tiene menos de 3 caracteres.
+Resultado obtenido: El navegador indica que el campo no cumple con la longitud mínima.
+
+PRUEBA 3
+Campo: Documento.
+Dato de prueba: 12345.
+Resultado esperado: El formulario debe rechazar el documento porque tiene menos de 6 dígitos.
+Resultado obtenido: El navegador indica que el formato ingresado no es válido.
+
+PRUEBA 4
+Campo: Documento.
+Dato de prueba: 12345ABC.
+Resultado esperado: El formulario debe rechazar el documento porque contiene letras.
+Resultado obtenido: El navegador solicita ingresar únicamente números.
+
+PRUEBA 5
+Campo: Correo.
+Dato de prueba: usuario.com.
+Resultado esperado: El formulario debe rechazar el correo porque no tiene un formato válido.
+Resultado obtenido: El navegador solicita ingresar una dirección de correo válida.
+
+PRUEBA 6
+Campo: Celular.
+Dato de prueba: 1234567890.
+Resultado esperado: El formulario debe rechazar el número porque no empieza por 3.
+Resultado obtenido: El navegador indica que el formato del celular es incorrecto.
+
+PRUEBA 7
+Campo: Celular.
+Dato de prueba: 312345678.
+Resultado esperado: El formulario debe rechazar el número porque tiene menos de 10 dígitos.
+Resultado obtenido: El navegador solicita ingresar un número que cumpla con el formato establecido.
+
+PRUEBA 8
+Campo: Fecha del alquiler.
+Dato de prueba: 25/10/2026.
+Resultado esperado: El formulario debe rechazar la fecha porque es anterior al 1 de noviembre de 2026.
+Resultado obtenido: El navegador impide el envío si la fecha mínima está configurada correctamente.
+
+PRUEBA 9
+Campo: Cantidad de bicicletas.
+Dato de prueba: 7.
+Resultado esperado: El formulario debe rechazar la cantidad porque supera el máximo permitido de 6 bicicletas.
+Resultado obtenido: El navegador indica que el valor está fuera del rango permitido.
+
+PRUEBA 10
+Campo: Tipo de bicicleta.
+Dato de prueba: No seleccionar ninguna opción.
+Resultado esperado: El formulario debe exigir que se seleccione un tipo de bicicleta.
+Resultado obtenido: El navegador solicita seleccionar una opción antes de enviar.
+
+1.
+- Combinación:
+   Blanco sobre Verde Ruta 
+- Contraste
+   5.31:1
+- Clasificación
+   Apta para texto normal 
+
+2.
+- Combinación:
+   Blanco sobre Naranja Pedal 
+- Contraste
+   2.22:1 
+- Clasificación:
+   No apta 
+
+3.
+- Combinación:
+   Azul Noche sobre Naranja Pedal 
+- Contraste:
+   7.20:1
+- Clasificación: 
+   Apta para texto normal
+
+4.
+- Combinación:
+   Azul Noche sobre Crema
+- Contraste: 
+   14.83:1 
+- Clasificación:
+   Apta para texto normal
+
+5.
+- Combinación:
+   Gris Asfalto sobre Crema
+- Contraste:
+   5.57:1
+- Clasificación:
+   Apta para texto normal
+
+6.
+-Combinación:
+   Verde Ruta sobre Crema
+- Contraste:
+   4.93:1
+- Clasificación:
+   Apta para texto normal
+
+7.
+- Combinación:
+   Naranja Pedal sobre Crema
+- Contraste:
+   2.06:1
+- Clasificación
+   No apta
+
+8.
+- Combinación:
+   Blanco sobre Azul Noche 
+- Contraste:
+   15.97:1 
+- Clasificación:
+   Apta para texto normal

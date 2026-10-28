@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="icon" href="../img/Logotipo de rueda-libre.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <nav>
+        <ul id="menu" >
+            <li><a href="tarifas.html">Tarifas y rutas</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#" class="activo">Reservas</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+<h1>Reserva tu bicicleta</h1>
+    <a href="malito:matiasriosospina@gmail.com">Correo de contacto</a>
+<dl>
+    <dt>Horario de atencion:</dt>
+    <dd>Lunes a viernes de 7:00 a.m a 7:00 p.m</dd>
+    <dd>Sabados, domingos y festivos de 6:00 a.m a 2:00 p.m</dd>
+</dl>
+<section id="Forms">
+        <form action="" method="post">
+            <fieldset class="Tus-datos">
+                <legend>Tus datos</legend>
+                <p>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" name="name" id="nombre" required minlength="3">
+                
+                </p>
+                <p>
+                    <label for="numero_de_documento">Numero de documento</label>
+                    <input type="text" required pattern="[0-9]{6,10}" title="Ingrese entre 6 y 10 digitos numericos">
+                </p>
+                <p>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" required>
+                </p>
+                <p>
+                    <label for="celular">Celular</label>
+                    <input type="text" required pattern="3[0-9]{9}" title="El numero debe iniciar por 3 y tener 10 digitos">
+                </p>
+            </fieldset>
+            <fieldset class="Tu-alquiler">
+                <legend>Tu alquiler</legend>
+                <p>
+                    <label for="fecha_alquiler">Fecha del alquiler</label>
+                    <input type="date" required min="2026-1101" max="2026-12-31" >
+                </p>
+                
+                <p>
+                    <label for="Tipo_bicicleta_select">Seleccione el tipo de bicicleta</label>
+                    <select name="Tipo_bicicleta_select" id="Tipo_bicicleta_select" required>
+                        <option value="">Seleccione una opcion</option>
+                        <option value="montaña">Montaña</option>
+                        <option value="urbana">Urbana</option>
+                        <option value="electrica">Electrica</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="tiempo">Seleccione el tiempo de uso</label>
+                    <select name="tiempo" id="tiempo_select">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="1hora">1 hora</option>
+                        <option value="medio_dia">Medio dia</option>
+                        <option value="dia_completo">Dia completo</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="cantidad_bicicletas">Digite la cantidad de bicicletas que necesita</label>
+                    <input type="number" id="" min="1" max="6">
+                </p>
+                <p>
+                    <label for="recorrido_guiado">Seleccione el recorrido</label>
+                    <select name="recorrido_guiado" id="recorrido_guiado">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="ninguno">Ninguno</option>
+                        <option value="cerro">Cerro de las 3 cruces</option>
+                        <option value="estadio">Vuelta estadio</option>
+                        <option value="ruta_lechera">Ruta lechera</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="comentarios">Comentarios</label>
+                    <input type="textarea" name="" id="">
+                </p>
+            </fieldset>
+            <fieldset class="Confirmacion">
+                <legend>Confirmacion</legend>
+                <p>
+                    <label for="comentario">Si tiene algun comentario, por favor dejenos saberlo</label>
+                    <input type="textarea" name="" id="">
+                </p>
+                <p>Necesitamos que acepte nuestras politicas de alquiler</p>
+                <p>
+                    <label for="aceptacion">Si</label>
+                    <input type="radio" name="" id="">
+                </p>
+                <p>
+                    <label for="politicas">Aceptar las politicas de alquiler</label>
+                    <input type="radio" name="" id="" title="Es obligatorio aceptar las politicas">
+                </p>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+<footer>
+    <p>Rueda-Libre</p>
+    <a href="malito:matiasriosospina1@gmail.com">Correo de contacto</a>
+    <p>2026</p>
+</footer>
+</html>
+
