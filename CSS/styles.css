@@ -1,4 +1,6 @@
-*{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -82,7 +84,6 @@ nav ul li a {
 
 .alquiler,
 .recorridos {
-  flex: 1 1 18rem;
   margin: 0;
   padding: var(--espacio-medio);
   border: 1px solid var(--gris-asfalto);
@@ -101,8 +102,34 @@ nav ul li a {
   flex-wrap: wrap;
   gap: var(--espacio-medio);
 }
+#servicios > article {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
 #servicios > h2 {
   flex-basis: 100%;
+}
+
+.tarjeta {
+  position: relative;
+  padding: var(--espacio-medio);
+  border: 1px solid var(--gris-asfalto);
+  border-radius: 0.5rem;
+  margin-bottom: var(--espacio-medio);
+}
+
+.etiqueta-nuevo {
+  position: absolute;
+  top: var(--espacio-pequeno);
+  right: var(--espacio-pequeno);
+  color: var(--azul-noche);
+  background-color: var(--naranja-pedal);
+}
+
+.tarjeta img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 main {
@@ -117,4 +144,17 @@ footer {
   margin: 0 auto;
 }
 
+body {
+  padding-bottom: 5rem;
+}
 
+.whatsapp {
+  position: fixed;
+  right: var(--espacio-medio);
+  bottom: var(--espacio-medio);
+  padding: var(--espacio-medio);
+  color: var(--crema);
+  background-color: var(--verde-ruta);
+  border-radius: var(--espacio-pequeno);
+  text-decoration: none;
+}
