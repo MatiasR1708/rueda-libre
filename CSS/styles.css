@@ -1,3 +1,4 @@
+/* MODELO DE CAJA Y VARIABLES */
 *,
 *::before,
 *::after {
@@ -19,10 +20,12 @@
   --espacio-grande: 2rem;
 }
 
+/* CUERPO Y TIPOGRAFÍA */
 body {
   font-family: var(--fuente-textos);
   color: var(--azul-noche);
   background-color: var(--crema);
+  padding-bottom: 5rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -30,6 +33,7 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--verde-ruta);
 }
 
+/* ENLACES DEL MENÚ Y ESTADOS */
 .menu a {
   color: white;
   text-decoration: none;
@@ -43,6 +47,7 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
+/* BOTÓN DE RESERVA */
 .reserva-ahora {
   text-decoration: none;
   background-color: #1e7a4f;
@@ -52,9 +57,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+/* ESTADOS HOVER Y FOCO */
 #menu a:hover {
+  text-decoration: underline;
   color: var(--naranja-pedal);
-  background-color: var(--gris-asfalto);
   
 }
 #menu a:focus {
@@ -63,10 +69,17 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--naranja-pedal);
 }
 
+/* ENCABEZADO Y NAVEGACIÓN */
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacio-medio);
+  flex-wrap: wrap;
+  padding: var(--espacio-medio);
   background-color: var(--azul-noche);
   font-family: var(--fuente-titulos);
-  display: flex;
+  
 }
 nav ul {
   display: flex;
@@ -77,11 +90,12 @@ nav ul {
 }
 nav ul li a {
   display: block;
-  padding: var(--espacio-medio) var(--espacio-grande);
+  padding: var(--espacio-medio);
   color: var(--crema);
   text-decoration: none;
 }
 
+/* TARJETAS DE ALQUILER Y RECORRIDOS */
 .alquiler,
 .recorridos {
   margin: 0;
@@ -97,6 +111,7 @@ nav ul li a {
   height: auto;
 }
 
+/* DISTRIBUCIÓN DE LAS TARJETAS DE SERVICIOS */
 #servicios {
   display: flex;
   flex-wrap: wrap;
@@ -110,6 +125,7 @@ nav ul li a {
   flex-basis: 100%;
 }
 
+/* TARJETA ELÉCTRICA Y ETIQUETA “NUEVO” */
 .tarjeta {
   position: relative;
   padding: var(--espacio-medio);
@@ -132,22 +148,31 @@ nav ul li a {
   height: auto;
 }
 
+/* ANCHO DEL CONTENIDO PRINCIPAL Y DEL PIE */
 main {
   max-width: 60rem;
   width: 100%;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 footer {
   max-width: 60rem;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--espacio-medio);
+  background-color: var(--azul-noche);
+  color: var(--crema);
+  text-decoration: none; 
+  padding: var(--espacio-medio);
+  
+  
 }
 
-body {
-  padding-bottom: 5rem;
-}
-
+/* ENLACE FIJO DE WHATSAPP */
 .whatsapp {
   position: fixed;
   right: var(--espacio-medio);
@@ -157,4 +182,28 @@ body {
   background-color: var(--verde-ruta);
   border-radius: var(--espacio-pequeno);
   text-decoration: none;
+}
+
+/* MARCA DEL ENCABEZADO */
+.marca{
+  text-decoration: none;
+  color: var(--crema);
+  white-space: nowrap;
+}
+/* ENLACE DEL PIE: estado normal, hover y foco */
+footer a,
+footer a:visited {
+  color: var(--crema);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--naranja-pedal);
+  text-decoration: none;
+}
+
+footer a:focus {
+  outline: 3px solid var(--naranja-pedal);
+  outline-offset: var(--espacio-pequeno);
 }
