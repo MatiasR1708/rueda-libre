@@ -1,10 +1,4 @@
-/* MODELO DE CAJA Y VARIABLES */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
+/* Identidad visual de Rueda Libre; la distribución responsive la aporta Bootstrap. */
 :root {
   --verde-ruta: #1e7a4f;
   --naranja-pedal: #f39a2b;
@@ -14,231 +8,123 @@
 
   --fuente-titulos: "Montserrat", Arial, sans-serif;
   --fuente-textos: "Open Sans", Arial, sans-serif;
-
-  --espacio-pequeno: 0.5rem;
-  --espacio-medio: 1rem;
-  --espacio-grande: 2rem;
 }
 
-/* CUERPO Y TIPOGRAFÍA */
 body {
   font-family: var(--fuente-textos);
   color: var(--azul-noche);
   background-color: var(--crema);
-  padding-bottom: 5rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--fuente-titulos);
   color: var(--verde-ruta);
 }
 
-/* ENLACES DEL MENÚ Y ESTADOS */
-.menu a {
-  color: white;
-  text-decoration: none;
-
-}
-
-#menu a.activo {
-  color: var(--crema);
-  font-weight: 600;
-  background-color: var(--verde-ruta);
-
-}
-
-/* BOTÓN DE RESERVA */
-.reserva-ahora {
-  text-decoration: none;
-  background-color: #1e7a4f;
-  border-radius: 5px;
-  padding: var(--espacio-pequeno);
-  color: #faf6ef;
-}
-
-
-/* ESTADOS HOVER Y FOCO */
-#menu a:hover {
-  text-decoration: underline;
-  color: var(--naranja-pedal);
-  
-}
-#menu a:focus {
-  outline: 3px solid var(--naranja-pedal);
-  outline-offset: var(--espacio-pequeno);
-  color: var(--naranja-pedal);
-}
-
-/* ENCABEZADO Y NAVEGACIÓN */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--espacio-medio);
-  flex-wrap: wrap;
-  padding: var(--espacio-medio);
-  background-color: var(--azul-noche);
-  font-family: var(--fuente-titulos);
-  
-}
-nav ul {
-  display: flex;
-  gap: var(--espacio-grande);
-  list-style: none;
-  flex-wrap: wrap;
-  padding: 0;
-}
-nav ul li a {
-  display: block;
-  padding: var(--espacio-medio);
-  color: var(--crema);
-  text-decoration: none;
-}
-
-/* TARJETAS DE ALQUILER Y RECORRIDOS */
-.alquiler,
-.recorridos {
-  margin: 0;
-  padding: var(--espacio-medio);
-  border: 1px solid var(--gris-asfalto);
-  border-radius: 5px;
-}
-
-.alquiler img,
-.recorridos img {
-  display: block;
+img {
   max-width: 100%;
   height: auto;
 }
 
-/* DISTRIBUCIÓN DE LAS TARJETAS DE SERVICIOS */
-#servicios {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--espacio-medio);
-}
-#servicios > article {
-  flex: 1 1 18rem;
-  min-width: 0;
-}
-#servicios > h2 {
-  flex-basis: 100%;
+a {
+  color: var(--verde-ruta);
 }
 
-/* TARJETA ELÉCTRICA Y ETIQUETA “NUEVO” */
-.tarjeta {
-  position: relative;
-  padding: var(--espacio-medio);
-  border: 1px solid var(--gris-asfalto);
-  border-radius: 0.5rem;
-  margin-bottom: var(--espacio-medio);
-}
-
-.etiqueta-nuevo {
-  position: absolute;
-  top: var(--espacio-pequeno);
-  right: var(--espacio-pequeno);
+a:hover,
+a:focus {
   color: var(--azul-noche);
-  background-color: var(--naranja-pedal);
 }
 
-.tarjeta img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* ANCHO DEL CONTENIDO PRINCIPAL Y DEL PIE */
-main {
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
-}
-footer {
-  max-width: 60rem;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: var(--espacio-medio);
+.navbar-rueda {
   background-color: var(--azul-noche);
-  color: var(--crema);
-  text-decoration: none; 
-  padding: var(--espacio-medio);
-  
-  
 }
 
-/* ENLACE FIJO DE WHATSAPP */
-.whatsapp {
-  position: fixed;
-  right: var(--espacio-medio);
-  bottom: var(--espacio-medio);
-  padding: var(--espacio-medio);
+.navbar-rueda .navbar-brand,
+.navbar-rueda .nav-link {
   color: var(--crema);
-  background-color: var(--verde-ruta);
-  border-radius: var(--espacio-pequeno);
-  text-decoration: none;
 }
 
-/* MARCA DEL ENCABEZADO */
-.marca{
-  text-decoration: none;
-  color: var(--crema);
-  white-space: nowrap;
-}
-/* ENLACE DEL PIE: estado normal, hover y foco */
-footer a,
-footer a:visited {
-  color: var(--crema);
-  text-decoration: none;
-}
-
-footer a:hover,
-footer a:focus {
+.navbar-rueda .nav-link:hover,
+.navbar-rueda .nav-link:focus,
+.navbar-rueda .nav-link.active {
   color: var(--naranja-pedal);
-  text-decoration: none;
 }
 
-footer a:focus {
-  outline: 3px solid var(--naranja-pedal);
-  outline-offset: var(--espacio-pequeno);
+.marca {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
 }
 
-/* CUADRÍCULA DE LA FLOTA */
-.flota-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: var(--espacio-medio);
+.btn-rueda {
+  --bs-btn-color: var(--crema);
+  --bs-btn-bg: var(--verde-ruta);
+  --bs-btn-border-color: var(--verde-ruta);
+  --bs-btn-hover-color: var(--azul-noche);
+  --bs-btn-hover-bg: var(--naranja-pedal);
+  --bs-btn-hover-border-color: var(--naranja-pedal);
 }
 
-/* CONTENIDO DE CADA TARJETA */
-.bicicleta-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 0;
-  height: 100%;
-  padding: var(--espacio-medio);
-  border: 1px solid var(--gris-asfalto);
-  border-radius: 0.5rem;
+.franja-rueda {
+  color: var(--crema);
+  background-color: var(--azul-noche);
 }
 
-.bicicleta-card img {
-  display: block;
+.franja-rueda h2 {
+  color: var(--crema);
+}
+
+.btn-rueda:focus-visible,
+.whatsapp:focus-visible {
+  outline: 0.2rem solid var(--naranja-pedal);
+  outline-offset: 0.15rem;
+}
+
+.form-control:focus-visible,
+.form-select:focus-visible {
+  outline: 0.2rem solid var(--verde-ruta);
+  outline-offset: 0.1rem;
+}
+
+.tarifa-table {
   width: 100%;
-  height: 12rem;
-  object-fit: cover;
-  margin-bottom: var(--espacio-medio);
+  table-layout: fixed;
+  font-size: 0.82rem;
+  --bs-table-color: var(--azul-noche);
 }
 
-.bicicleta-card .precio {
-  font-weight: 600;
+.tarifa-table thead th {
+  color: var(--crema);
+  background-color: var(--azul-noche);
 }
 
-.bicicleta-card .reserva-ahora {
-  align-self: flex-start;
+.tarifa-table th,
+.tarifa-table td {
+  padding: 0.35rem 0.25rem;
+  overflow-wrap: anywhere;
+  vertical-align: middle;
+}
+
+.footer-rueda {
+  color: var(--crema);
+  background-color: var(--azul-noche);
+}
+
+.footer-rueda h2,
+.footer-rueda a {
+  color: var(--crema);
+}
+
+.footer-rueda a:hover,
+.footer-rueda a:focus {
+  color: var(--naranja-pedal);
+}
+
+.whatsapp:focus {
+  outline: 3px solid var(--naranja-pedal);
+  outline-offset: 0.2rem;
 }

@@ -1,135 +1,81 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/Logotipo de rueda-libre.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="../CSS/styles.css" />
-
-    <title>Pagina de precios</title>
-    <link rel="icon" href="../img/Logotipo de rueda-libre.png" />
+    <title>Tarifas y rutas | Rueda Libre</title>
   </head>
-
   <body>
-    <header>
-      <a class="marca" href="../index.html">Rueda Libre</a>
-      <nav>
-        <ul id="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="#" class="activo">Tarifas y rutas</a></li>
-          <li><a href="reservas.html">Reservas</a></li>
-          
-        </ul>
-      </nav>
+    <header class="navbar navbar-expand-md navbar-rueda">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <a class="navbar-brand marca" href="../index.html">Rueda Libre</a>
+        <nav aria-label="Navegación principal"><ul class="navbar-nav align-items-center flex-md-row gap-md-3">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="tarifas.html">Tarifas y rutas</a></li>
+          <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
+        </ul></nav>
+      </div>
     </header>
-    <main>
-      <p>Este es el apartado de precios de rueda-libre</p>
-      <img
-        src="../img/Logotipo de rueda-libre.png"
-        alt="Logotipo de rueda-libre"
-        width="35%"
-      />
-      <table id="Tabla-precios" >
-        <caption>
-          <strong>Tabla de precios</strong>
-        </caption>
-        <tr>
-          <th scope="col">Tipo de bicicleta</th>
-          <th scope="col">1 hora</th>
-          <th scope="col">Medio dia (4 h)</th>
-          <th scope="col">Dia completo</th>
-        </tr>
-        <tbody>
-          <tr>
-            <td>Urbana</td>
-            <td>$10.000</td>
-            <td>$30.000</td>
-            <td>$50.000</td>
-          </tr>
-          <tr>
-            <td>Montaña</td>
-            <td>$15.000</td>
-            <td>$45.000</td>
-            <td>$70.000</td>
-          </tr>
-          <tr>
-            <td>Electrica</td>
-            <td>$25.000</td>
-            <td>$70.000</td>
-            <td>$110.000</td>
-          </tr>
-        </tbody>
-      </table>
-      <br />
-      <table id="Tabla-recorridos" border="1">
-        <caption>
-          <strong>Tabla de Recorridos</strong>
-        </caption>
-        <tbody>
-          <tr>
-            <th scope="col">Recorrido</th>
-            <th scope="col">Distancia</th>
-            <th scope="col">Duracion</th>
-            <th scope="col">Nivel</th>
-            <th scope="col">Precio por persona</th>
-          </tr>
-          <tr>
-            <td>Rio y parques</td>
-            <td>12km</td>
-            <td>2h</td>
-            <td>Facil</td>
-            <td>$45.000</td>
-          </tr>
-          <tr>
-            <td>Sabores de barrio</td>
-            <td>18km</td>
-            <td>3h</td>
-            <td>Medio</td>
-            <td>$60.000</td>
-          </tr>
-          <tr>
-            <td>Reto las palmas</td>
-            <td>25km</td>
-            <td>4h</td>
-            <td>Dificil</td>
-            <td>$85.000</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>
-        Todas las tarifas inclyen casco y candado. Los recorridos sales sabados
-        y domingos a las 7:00 a.m. Que llevar: ropa comoda, agua, protector
-        solar y documento de identidad
-      </p>
-      <a href="../index.html">Volver a la pagina principal</a>
+
+    <main class="container py-4">
+      <h1 class="mb-3">Tarifas y rutas</h1>
+      <p class="lead">Elige la bicicleta y el recorrido que mejor se adapten a tu plan.</p>
+
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-lg-8">
+          <section aria-labelledby="Tabla-precios" class="mb-4">
+            <h2 id="Tabla-precios" class="h3">Precios de bicicletas</h2>
+            <table class="table table-bordered table-sm tarifa-table">
+              <caption class="caption-top">Precio de alquiler según el tiempo de uso</caption>
+              <thead><tr><th scope="col">Tipo de bicicleta</th><th scope="col">1 hora</th><th scope="col">Medio día (4 h)</th><th scope="col">Día completo</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Urbana</th><td>$10.000</td><td>$30.000</td><td>$50.000</td></tr>
+                <tr><th scope="row">Montaña</th><td>$15.000</td><td>$45.000</td><td>$70.000</td></tr>
+                <tr><th scope="row">Eléctrica</th><td>$25.000</td><td>$70.000</td><td>$110.000</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section aria-labelledby="Tabla-recorridos">
+            <h2 id="Tabla-recorridos" class="h3">Precios de recorridos</h2>
+            <table class="table table-bordered table-sm tarifa-table">
+              <caption class="caption-top">Rutas guiadas disponibles</caption>
+              <thead><tr><th scope="col">Recorrido</th><th scope="col">Distancia</th><th scope="col">Duración</th><th scope="col">Nivel</th><th scope="col">Precio por persona</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Río y parques</th><td>12 km</td><td>2 h</td><td>Fácil</td><td>$45.000</td></tr>
+                <tr><th scope="row">Sabores de barrio</th><td>18 km</td><td>3 h</td><td>Medio</td><td>$60.000</td></tr>
+                <tr><th scope="row">Reto Las Palmas</th><td>25 km</td><td>4 h</td><td>Difícil</td><td>$85.000</td></tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+
+        <aside class="col-12 col-lg-4">
+          <div class="p-4 rounded-3 bg-body-tertiary">
+            <h2 class="h4">Información útil</h2>
+            <p>Todas las tarifas incluyen casco y candado.</p>
+            <p>Los recorridos salen sábados y domingos a las 7:00 a. m.</p>
+            <p>Trae ropa cómoda, agua, protector solar y documento de identidad.</p>
+            <a class="btn btn-rueda" href="reservas.html">Reservar</a>
+          </div>
+        </aside>
+      </div>
     </main>
-    <footer>
-      <section>
-        <h2>© Rueda-Libre 2026</h2>
-        <p>Alquiler de bicicletas</p>
-      </section>
-      <section>
-        <h2>Correo</h2>
-        <a href="mailto:matiasriosospina1@gmail.com">Escribenos</a>
-      </section>
-      <section>
-        <h2>Horario de atencion:</h2>
-        <dl class = "horario">
-          <dt>Lunes a viernes</dt>
-          <dd>7:00 a.m a 7:00 p.m</dd>
-          <dt>Sabados, domingos y festivos</dt>
-          <dd>6:00 a.m a 2:00 p.m</dd>
-        </dl>
-      </section>
+
+    <footer class="container-fluid mt-5 p-4 pb-5 text-bg-dark footer-rueda">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+        <section><h2 class="h5">© Rueda Libre 2026</h2><p class="mb-0">Alquiler de bicicletas</p></section>
+        <section><h2 class="h5">Contacto</h2><a class="link-light" href="mailto:matiasriosospina1@gmail.com">Escríbenos</a></section>
+        <section><h2 class="h5">Horario</h2><p class="mb-0">Lunes a viernes: 7:00 a. m. a 7:00 p. m.<br />Fines de semana: 6:00 a. m. a 2:00 p. m.</p></section>
+      </div>
     </footer>
-  <a class="whatsapp"
-  href="https://wa.me/573000000000"
-  target="_blank"
-  rel="noopener noreferrer">WhatsApp</a>
+    <a class="btn btn-rueda whatsapp position-fixed bottom-0 end-0 m-3 z-3" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
