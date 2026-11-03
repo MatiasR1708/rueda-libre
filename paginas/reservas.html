@@ -77,14 +77,8 @@
             </p>
 
             <p>
-              <label for="Tipo_bicicleta_select"
-                >Seleccione el tipo de bicicleta</label
-              >
-              <select
-                name="Tipo_bicicleta_select"
-                id="Tipo_bicicleta_select"
-                required
-              >
+              <label for="Tipo_bicicleta_select">Seleccione el tipo de bicicleta</label>
+              <select name="Tipo_bicicleta" id="Tipo_bicicleta_select" required>
                 <option value="">Seleccione una opcion</option>
                 <option value="montaña">Montaña</option>
                 <option value="urbana">Urbana</option>
@@ -124,24 +118,15 @@
           <fieldset class="Confirmacion">
             <legend>Confirmacion</legend>
             <p>
-              <label for="comentario"
-                >Si tiene algun comentario, por favor dejenos saberlo</label
+              <label for="comentario">Si tiene algun comentario, por favor dejenos saberlo</label>
               >
               <input type="textarea" name="" id="" />
             </p>
             <p>Necesitamos que acepte nuestras politicas de alquiler</p>
-            <p>
+            
               <label for="aceptacion">Si</label>
-              <input type="radio" name="" id="" />
-            </p>
-            <p>
-              <label for="politicas">Aceptar las politicas de alquiler</label>
-              <input
-                type="radio"
-                name=""
-                id=""
-                title="Es obligatorio aceptar las politicas"
-              />
+              <input type="radio" name="aceptacion" id="aceptacion" />
+            
             </p>
             <button type="submit">Enviar</button>
           </fieldset>
